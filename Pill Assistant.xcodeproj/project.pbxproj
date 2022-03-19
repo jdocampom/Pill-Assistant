@@ -14,6 +14,12 @@
 		86A2011927E61006006E5B9D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 86A2011827E61006006E5B9D /* README.md */; };
 		86A2011B27E6100E006E5B9D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 86A2011A27E6100E006E5B9D /* LICENSE */; };
 		86A2013127E61D91006E5B9D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86A2013027E61D91006E5B9D /* CloudKit.framework */; };
+		86E0175527E6798E0055D532 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86E0175327E6798E0055D532 /* Main.xcdatamodeld */; };
+		86E0175727E67A8B0055D532 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0175627E67A8B0055D532 /* DataController.swift */; };
+		86E0175927E67BC90055D532 /* Dose+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0175827E67BC90055D532 /* Dose+CoreDataHelpers.swift */; };
+		86E0175B27E67C450055D532 /* Medication+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0175A27E67C450055D532 /* Medication+CoreDataHelpers.swift */; };
+		86E0175D27E67E1F0055D532 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0175C27E67E1F0055D532 /* HomeView.swift */; };
+		86E0175F27E67E350055D532 /* MedicationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E0175E27E67E350055D532 /* MedicationsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +33,12 @@
 		86A2012E27E61D8F006E5B9D /* Pill Assistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pill Assistant.entitlements"; sourceTree = "<group>"; };
 		86A2013027E61D91006E5B9D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		86A2013227E61D9D006E5B9D /* Pill-Assistant-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Pill-Assistant-Info.plist"; sourceTree = SOURCE_ROOT; };
+		86E0175427E6798E0055D532 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		86E0175627E67A8B0055D532 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		86E0175827E67BC90055D532 /* Dose+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dose+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		86E0175A27E67C450055D532 /* Medication+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medication+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		86E0175C27E67E1F0055D532 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		86E0175E27E67E350055D532 /* MedicationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,12 @@
 				86A2010C27E60F40006E5B9D /* ContentView.swift */,
 				86A2010E27E60F42006E5B9D /* Assets.xcassets */,
 				86A2011027E60F42006E5B9D /* Preview Content */,
+				86E0175327E6798E0055D532 /* Main.xcdatamodeld */,
+				86E0175627E67A8B0055D532 /* DataController.swift */,
+				86E0175827E67BC90055D532 /* Dose+CoreDataHelpers.swift */,
+				86E0175A27E67C450055D532 /* Medication+CoreDataHelpers.swift */,
+				86E0175C27E67E1F0055D532 /* HomeView.swift */,
+				86E0175E27E67E350055D532 /* MedicationsView.swift */,
 			);
 			path = "Pill Assistant";
 			sourceTree = "<group>";
@@ -161,7 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E0175527E6798E0055D532 /* Main.xcdatamodeld in Sources */,
+				86E0175D27E67E1F0055D532 /* HomeView.swift in Sources */,
+				86E0175727E67A8B0055D532 /* DataController.swift in Sources */,
+				86E0175F27E67E350055D532 /* MedicationsView.swift in Sources */,
 				86A2010D27E60F40006E5B9D /* ContentView.swift in Sources */,
+				86E0175927E67BC90055D532 /* Dose+CoreDataHelpers.swift in Sources */,
+				86E0175B27E67C450055D532 /* Medication+CoreDataHelpers.swift in Sources */,
 				86A2010B27E60F40006E5B9D /* PillAssistantApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +391,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		86E0175327E6798E0055D532 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				86E0175427E6798E0055D532 /* Main.xcdatamodel */,
+			);
+			currentVersion = 86E0175427E6798E0055D532 /* Main.xcdatamodel */;
+			name = Main.xcdatamodeld;
+			path = ../../../../../../Music/Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 86A200FF27E60F40006E5B9D /* Project object */;
 }
